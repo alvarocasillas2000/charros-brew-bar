@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+/* Custom Dashboard Styles */
+@layer components {
+    .dashboard-card {
+        @apply bg-white shadow-lg rounded-xl border border-gray-200 transition-all duration-300 hover:shadow-xl;
+    }
+    
+    .dashboard-card-gradient {
+        @apply bg-gradient-to-br shadow-lg rounded-xl border transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1;
+    }
+    
+    .status-badge {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+    }
+    
+    .action-button {
+        @apply inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200;
+    }
+    
+    .quick-action-btn {
+        @apply bg-gradient-to-r text-white px-6 py-3 rounded-lg shadow-lg font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl flex items-center;
+    }
+    
+    /* Loading animations */
+    .fade-in {
+        animation: fadeIn 0.6s ease-out forwards;
+    }
+    
+    .slide-up {
+        animation: slideUp 0.6s ease-out forwards;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom scrollbar for webkit browsers */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Custom hover effects */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Focus states for accessibility */
+.focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+/* Responsive text scaling */
+@screen sm {
+    .responsive-text {
+        @apply text-base;
+    }
+}
+
+@screen lg {
+    .responsive-text {
+        @apply text-lg;
+    }
+}
+
+/* Chart container styling */
+.chart-container {
+    position: relative;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 12px;
+    padding: 1rem;
+}

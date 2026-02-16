@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /business-days
+Disallow: /areas
+Disallow: /checkout
+Disallow: /api
+
+Sitemap: https://www.charrossportbar.com/sitemap.xml
