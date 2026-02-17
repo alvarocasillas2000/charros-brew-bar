@@ -149,7 +149,7 @@
         <img src="{{ url('/assets/img/sportbarlogo.png') }}" alt="logo sportbar" style="max-height:100px; display:block; align-self:center; margin-right:20px;">
         <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: 20px; text-align: center;">
             <h1>Reporte de Reservaciones</h1>
-            <div class="subtitle">Charros Sport Bar</div>
+            <div class="subtitle">Charros Brew Bar</div>
         </div>
         <img src="{{ url('/assets/img/ch_campeones.png') }}" alt="charros campeones" style="max-height: 100px; display: block; align-self: center; margin-left: 20px;">
     </div>
@@ -239,7 +239,7 @@
 
     <div class="footer">
         <p>Este documento fue generado automáticamente el {{ now()->format('d/m/Y') }} a las {{ now()->format('H:i:s') }}</p>
-        <p>Charros Sport Bar - Sistema de Gestión de Reservaciones</p>
+        <p>Charros Brew Bar - Sistema de Gestión de Reservaciones</p>
     </div>
 
     <div class="no-print" style="margin-top: 30px; text-align: center;">

@@ -18,19 +18,19 @@
             <!-- Main card -->
             <div class="bg-white overflow-hidden shadow-lg sm:rounded-xl">
                 <!-- Header section -->
-                <div class="bg-gradient-to-r from-blue-700 to-blue-800 px-6 py-8 text-white">
+                <div class="bg-gradient-to-r from-gray-700 to-gray-800 px-6 py-8 text-white">
                     <div class="flex items-center gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" /></svg>
                         <div>
                             <h3 class="text-2xl font-bold mb-1">Añadir Personas</h3>
-                            <p class="text-blue-100 text-sm">Reservación #{{ $reservation->id }}</p>
+                            <p class="text-gray-100 text-sm">Reservación #{{ $reservation->id }}</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="p-6">
                     <!-- Current reservation info -->
-                    <div class="mb-8 bg-blue-50 rounded-lg p-6 border border-blue-200">
+                    <div class="mb-8 bg-gray-50 rounded-lg p-6 border border-gray-200">
                         <h4 class="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" /></svg>
                             Información Actual
@@ -75,7 +75,7 @@
                                     name="extra_people" 
                                     min="1" 
                                     value="1"
-                                    class="block w-full rounded-lg border-2 border-gray-300 px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-lg font-medium"
+                                    class="block w-full rounded-lg border-2 border-gray-300 px-4 py-3 focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all text-lg font-medium"
                                     required
                                 />
                                 @error('extra_people')
@@ -88,7 +88,7 @@
                             </div>
 
                             <!-- Cost preview -->
-                            <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
+                            <div class="bg-gradient-to-br from-green-50 to-gray-50 rounded-lg p-6 border border-green-200">
                                 <h5 class="text-sm font-semibold text-gray-700 mb-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75z" /></svg>
                                     Cálculo de Costo
@@ -117,7 +117,7 @@
                                 </a>
                                 <button 
                                     type="submit" 
-                                    class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium shadow-md hover:shadow-lg">
+                                    class="inline-flex items-center gap-2 bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium shadow-md hover:shadow-lg">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                                     Confirmar y Agregar
                                 </button>
@@ -129,3 +129,4 @@
         </div>
     </div>
 </x-app-layout>
+

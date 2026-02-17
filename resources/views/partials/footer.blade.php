@@ -5,7 +5,7 @@
       <!-- Brand section -->
       <div>
         <div class="mb-6">
-          <h3 class="text-2xl font-bold text-white mb-3">Charros Sport Bar</h3>
+          <h3 class="text-2xl font-bold text-white mb-3">Charros Brew Bar</h3>
           <p class="text-gray-300 text-sm leading-relaxed">
             Disfruta de la mejor experiencia deportiva en nuestro sport bar. 
             Reserva tu mesa y vive la emoción de los Charros de Jalisco.
@@ -123,7 +123,7 @@
     </div>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/5213312500826?text=%C2%A1Hola!%20Estuve%20viendo%20la%20p%C3%A1gina%20de%20Charros%20Sport%20Bar%20y%20tengo%20algunas%20dudas.%20%C2%BFPodr%C3%ADan%20ayudarme?"
+    <a href="https://wa.me/5213312500826?text=%C2%A1Hola!%20Estuve%20viendo%20la%20p%C3%A1gina%20de%20Charros%20Brew%20Bar%20y%20tengo%20algunas%20dudas.%20%C2%BFPodr%C3%ADan%20ayudarme?"
        target="_blank"
        rel="noopener noreferrer"
        aria-label="Contáctanos por WhatsApp"

@@ -14,7 +14,7 @@
     <div class="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-lg sm:rounded-2xl border border-gray-100">
-                <div class="px-6 py-5 bg-gradient-to-r from-blue-600 to-blue-800 border-b border-blue-700 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="px-6 py-5 bg-gradient-to-r from-gray-600 to-gray-800 border-b border-gray-700 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div class="flex items-center gap-4">
                         <a href="{{ route('dashboard') }}" class="text-white/90 hover:text-white text-sm flex items-center gap-2 hover:scale-105 transition-transform">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
@@ -31,7 +31,7 @@
 
                     <div class="flex items-center gap-3 w-full sm:w-auto">
                         <a href="{{ route('business-days.create') }}" 
-                           class="inline-flex items-center gap-2 bg-white hover:bg-blue-50 text-blue-700 font-semibold py-2.5 px-4 rounded-lg text-sm shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                           class="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-700 font-semibold py-2.5 px-4 rounded-lg text-sm shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg> Crear Nuevo
                         </a>
                     </div>
@@ -44,9 +44,9 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
                             </div>
                             <input id="q" name="q" value="{{ request('q') }}" type="search" placeholder="Buscar por fecha o descripción..."
-                                class="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" />
+                                class="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all" />
                         </div>
-                        <button type="submit" class="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg text-sm font-medium shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+                        <button type="submit" class="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white rounded-lg text-sm font-medium shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg> Buscar
                         </button>
                     </form>
@@ -96,10 +96,10 @@
                                     </thead>
                                     <tbody class="bg-white divide-y divide-gray-100">
                                         @foreach($businessDays as $day)
-                                        <tr class="hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 cursor-pointer transition-all duration-200 group" onclick="window.location='{{ route('business-days.show', $day->id) }}'">
+                                        <tr class="hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-50 cursor-pointer transition-all duration-200 group" onclick="window.location='{{ route('business-days.show', $day->id) }}'">
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center gap-3">
-                                                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-110 transition-all duration-200">
+                                                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-110 transition-all duration-200">
                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" /></svg>
                                                     </div>
                                                     <span class="text-sm font-semibold text-gray-900">{{ $day->date->format('d/m/Y') }}</span>
@@ -122,7 +122,7 @@
                                             <td class="px-6 py-4 whitespace-nowrap text-right" onclick="event.stopPropagation()">
                                                 <div class="relative inline-block" x-data="{ open: false }">
                                                     <button @click="open = !open" @click.away="open = false" 
-                                                        class="inline-flex items-center justify-center w-9 h-9 text-gray-600 hover:text-white bg-gray-100 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-700 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md">
+                                                        class="inline-flex items-center justify-center w-9 h-9 text-gray-600 hover:text-white bg-gray-100 hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-700 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md">
                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" /></svg>
                                                     </button>
                                                     
@@ -137,9 +137,9 @@
                                                          style="display: none;">
                                                         <div class="py-2">
                                                             <a href="{{ route('business-days.show', $day->id) }}" 
-                                                               class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:text-blue-700 transition-colors">
-                                                                <div class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-blue-600"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                                               class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-50 hover:text-gray-700 transition-colors">
+                                                                <div class="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-600"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                                                 </div>
                                                                 <span class="font-medium">Ver detalles</span>
                                                             </a>
@@ -178,9 +178,9 @@
 
                         <div class="mt-6 flex items-center justify-between px-4 py-4 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200">
                             <div class="text-sm text-gray-600">
-                                Mostrando <span class="font-semibold text-blue-600">{{ $businessDays->firstItem() }}</span> 
-                                a <span class="font-semibold text-blue-600">{{ $businessDays->lastItem() }}</span> 
-                                de <span class="font-semibold text-blue-600">{{ $businessDays->total() }}</span> resultados
+                                Mostrando <span class="font-semibold text-gray-600">{{ $businessDays->firstItem() }}</span> 
+                                a <span class="font-semibold text-gray-600">{{ $businessDays->lastItem() }}</span> 
+                                de <span class="font-semibold text-gray-600">{{ $businessDays->total() }}</span> resultados
                             </div>
                             <div>
                                 {{ $businessDays->withQueryString()->links() }}
@@ -189,13 +189,13 @@
                     @else
                         <div class="py-20 text-center">
                             <div class="mx-auto max-w-md">
-                                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-blue-600"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" /></svg>
+                                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gray-100 to-gray-100 flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-gray-600"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" /></svg>
                                 </div>
                                 <h4 class="text-2xl font-bold text-gray-900 mb-3">No hay días de juego</h4>
                                 <p class="text-gray-600 mb-8">Aún no hay registros. Crea un nuevo día de juego para comenzar.</p>
                                 <a href="{{ route('business-days.create') }}" 
-                                   class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                                   class="inline-flex items-center gap-2 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg> Crear Día de Juego
                                 </a>
                             </div>

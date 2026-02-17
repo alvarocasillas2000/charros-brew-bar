@@ -20,11 +20,11 @@
             <!-- Main card -->
             <div class="bg-white overflow-hidden shadow-lg sm:rounded-xl">
                 <!-- Header section with status -->
-                <div class="bg-gradient-to-r from-blue-700 to-blue-800 px-6 py-8 text-white">
+                <div class="bg-gradient-to-r from-gray-700 to-gray-800 px-6 py-8 text-white">
                     <div class="flex items-start justify-between">
                         <div>
                             <h3 class="text-2xl font-bold mb-2">Reservación #{{ $reservation->id }}</h3>
-                            <!-- <p class="text-blue-100 text-sm">{{ $reservation->transaction_id ?? 'Sin ID de transacción' }}</p> -->
+                            <!-- <p class="text-gray-100 text-sm">{{ $reservation->transaction_id ?? 'Sin ID de transacción' }}</p> -->
                         </div>
                         <div>
                             @php
@@ -109,7 +109,7 @@
                     <!-- Add extra people button -->
                     <div class="mb-8">
                         <a href="{{ route('reserva_extra', $reservation->id) }}" 
-                           class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium shadow-md hover:shadow-lg">
+                           class="inline-flex items-center gap-2 bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium shadow-md hover:shadow-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" /></svg>
                             <span>Añadir personas a la reservación</span>
                         </a>
@@ -140,7 +140,7 @@
                                 <textarea 
                                     name="note" 
                                     rows="3"
-                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-colors resize-none"
                                     placeholder="Escribe una nota rápida sobre esta reservación..."
                                     required
                                 ></textarea>
@@ -151,7 +151,7 @@
                                     <p class="text-xs text-gray-500">Máximo 1000 caracteres</p>
                                     <button 
                                         type="submit" 
-                                        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium flex items-center gap-2"
+                                        class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium flex items-center gap-2"
                                     >
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
                                         Agregar Nota
@@ -166,7 +166,7 @@
                         @else
                             <div class="space-y-4">
                                 @foreach($reservation->notes->sortByDesc('created_at') as $note)
-                                    <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-600 shadow-sm">
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-600 shadow-sm">
                                         <p class="text-gray-900 text-base">{{ $note->note }}</p>
                                         <p class="text-xs text-gray-600 mt-2 flex items-center gap-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -185,7 +185,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             Información de Pago
                         </h4>
-                        <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
+                        <div class="bg-gradient-to-br from-green-50 to-gray-50 rounded-lg p-6 border border-green-200">
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div>
                                     <label class="text-xs font-medium text-gray-600 uppercase tracking-wider block mb-2">Costo Total</label>
@@ -221,7 +221,7 @@
                                             'pending'    => ['class' => 'bg-yellow-100 text-yellow-800','icon' => 'fa-clock',          'label' => 'Pendiente'],
                                             'processing' => ['class' => 'bg-yellow-100 text-yellow-800','icon' => 'fa-spinner fa-spin', 'label' => 'En proceso'],
                                             'failed'     => ['class' => 'bg-red-100 text-red-800',     'icon' => 'fa-xmark-circle',   'label' => 'Fallido'],
-                                            'refunded'   => ['class' => 'bg-blue-100 text-blue-800',   'icon' => 'fa-arrow-rotate-left','label' => 'Reembolsado'],
+                                            'refunded'   => ['class' => 'bg-gray-100 text-gray-800',   'icon' => 'fa-arrow-rotate-left','label' => 'Reembolsado'],
                                             'cancelled'  => ['class' => 'bg-red-100 text-red-800',     'icon' => 'fa-ban',            'label' => 'Cancelado'],
                                         ];
                                         $meta = $statusMap[$paymentStatus] ?? ['class' => 'bg-gray-100 text-gray-800', 'icon' => 'fa-info-circle', 'label' => ucfirst($paymentStatus)];

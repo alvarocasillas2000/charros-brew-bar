@@ -12,9 +12,9 @@ Show the complete diagram
 
 ### Analysis Summary
 
-# Codebase Diagram: Charros Sport Bar Application
+# Codebase Diagram: Charros Brew Bar Application
 
-This report provides a comprehensive overview of the Charros Sport Bar application's codebase, detailing its high-level architecture, key components, and their interrelationships. The application is built using the Laravel framework, following its established conventions for structuring web applications.
+This report provides a comprehensive overview of the Charros Brew Bar application's codebase, detailing its high-level architecture, key components, and their interrelationships. The application is built using the Laravel framework, following its established conventions for structuring web applications.
 
 ## High-Level Architecture
 

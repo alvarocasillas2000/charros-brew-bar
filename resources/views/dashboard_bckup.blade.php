@@ -10,7 +10,7 @@
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
                 <div class="bg-white shadow-xl rounded-lg p-4 flex flex-col items-center w-full ">
-                    <div class="text-2xl font-bold text-blue-600">{{ $stats['reservations_today'] ?? 0 }}</div>
+                    <div class="text-2xl font-bold text-gray-600">{{ $stats['reservations_today'] ?? 0 }}</div>
                     <div class="text-gray-600 text-center">Reservas hechas hoy</div>
                 </div>
                 <div class="bg-white shadow-xl rounded-lg p-4 flex flex-col items-center w-full">
@@ -18,14 +18,14 @@
                     <div class="text-gray-600 text-center">Reservas para próximos juegos</div>
                 </div>
                 <div class="bg-white shadow-xl rounded-lg p-4 flex flex-col items-center w-full">
-                    <div class="text-2xl font-bold text-purple-600">{{ $stats['business_days'] ?? 0 }}</div>
+                    <div class="text-2xl font-bold text-gray-600">{{ $stats['business_days'] ?? 0 }}</div>
                     <div class="text-gray-600 text-center">Juegos disponibles para reservar</div>
                 </div>
             </div>
             <!-- Quick Actions -->
             <div class="flex flex-wrap gap-4 mb-6 justify-center ">
                 <a href="{{ route('areas.index') }}" class="bg-yellow-500 hover:bg-yellow-600 shadow-xl text-white px-4 py-2 rounded">Gestionar Áreas</a>
-                <a href="{{ route('business-days.index') }}" class="bg-purple-500 hover:bg-purple-600 shadow-xl text-white px-4 py-2 rounded">Gestionar Días de Juego</a>
+                <a href="{{ route('business-days.index') }}" class="bg-gray-500 hover:bg-gray-600 shadow-xl text-white px-4 py-2 rounded">Gestionar Días de Juego</a>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
                             </option>
                         @endforeach
                     </select>
-                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Buscar</button>
+                    <button type="submit" class="bg-gray-500 text-white px-4 py-2 rounded">Buscar</button>
                 </form>
             </div>
         </div>
@@ -159,7 +159,7 @@
                                 <td class="px-2 sm:px-6 py-4">{{ $reservation->status ?? 'N/A' }}</td>
                                 <td class="px-2 sm:px-6 py-4 whitespace-nowrap text-sm font-medium">
                                     @if($reservation->transaction_id)
-                                        <a href="{{ route('reservation.details', $reservation->transaction_id) }}" class="text-blue-600 hover:text-blue-900 ml-4">
+                                        <a href="{{ route('reservation.details', $reservation->transaction_id) }}" class="text-gray-600 hover:text-gray-900 ml-4">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 inline">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
                                             </svg> Más info
@@ -242,3 +242,4 @@
     </script>
     @endpush
 </x-app-layout>
+

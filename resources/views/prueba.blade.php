@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-    <title>Charros Sport Bar</title>
+    <title>Charros Brew Bar</title>
 
     <meta
       name="description"
-      content="Charros Sport Bar ~ caliente.mx"
+      content="Charros Brew Bar ~ caliente.mx"
     />
     <meta name="author" content="nextium~AC" />
 

@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Charros Sport Bar') }}
+            {{ __('Charros Brew Bar') }}
         </h2>
     </x-slot>
 
@@ -147,11 +147,11 @@
     @endpush
 
     <!-- Hero Section with Gradient Background -->
-    <div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="min-h-screen bg-gradient-to-br from-gray-50 via-gray-50 to-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-8">
-                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full mb-4 shadow-lg">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-700 rounded-full mb-4 shadow-lg">
                     <i class="fas fa-shopping-cart text-white text-2xl"></i>
                 </div>
                 <h1 class="text-4xl font-bold text-gray-900 mb-2">
@@ -167,7 +167,7 @@
                 <!-- Reservation Details Card -->
                 <div class="lg:col-span-2">
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-                        <div class="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 px-6 py-4">
+                        <div class="bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800 px-6 py-4">
                             <h2 class="text-xl font-bold text-white flex items-center">
                                 <i class="fas fa-file-invoice mr-3"></i>
                                 Detalles de la Reserva
@@ -184,8 +184,8 @@
                                 </h3>
                                 <div class="space-y-3">
                                     <div class="flex items-start">
-                                        <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                                            <i class="fas fa-user text-blue-600"></i>
+                                        <div class="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-user text-gray-600"></i>
                                         </div>
                                         <div class="flex-1">
                                             <p class="text-xs text-gray-500 font-medium">Nombre</p>
@@ -194,8 +194,8 @@
                                     </div>
                                     
                                     <div class="flex items-start">
-                                        <div class="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
-                                            <i class="fas fa-envelope text-purple-600"></i>
+                                        <div class="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-envelope text-gray-600"></i>
                                         </div>
                                         <div class="flex-1">
                                             <p class="text-xs text-gray-500 font-medium">Email</p>
@@ -222,8 +222,8 @@
                                 </h3>
                                 <div class="space-y-3">
                                     <div class="flex items-start">
-                                        <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
-                                            <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                                        <div class="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-map-marker-alt text-gray-600"></i>
                                         </div>
                                         <div class="flex-1">
                                             <p class="text-xs text-gray-500 font-medium">Área</p>
@@ -260,7 +260,7 @@
                 <!-- Payment Summary Card -->
                 <div class="lg:col-span-1">
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 sticky top-8">
-                        <div class="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 px-6 py-4">
+                        <div class="bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800 px-6 py-4">
                             <h2 class="text-xl font-bold text-white flex items-center">
                                 <i class="fas fa-receipt mr-3"></i>
                                 Resumen
@@ -293,7 +293,7 @@
 
                             <!-- Payment Button -->
                             <button id="checkout-button" 
-                                class="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2 group">
+                                class="w-full bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800 hover:from-gray-700 hover:via-gray-800 hover:to-gray-900 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2 group">
                                 <i class="fas fa-lock group-hover:scale-110 transition-transform"></i>
                                 <span>Proceder al Pago</span>
                             </button>
@@ -306,9 +306,9 @@
                             </div>
 
                             <!-- Payment Info -->
-                            <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                            <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
                                 <div class="flex items-start space-x-3">
-                                    <i class="fas fa-info-circle text-blue-600 mt-1"></i>
+                                    <i class="fas fa-info-circle text-gray-600 mt-1"></i>
                                     <div class="flex-1">
                                         <p class="text-sm text-gray-700 font-medium mb-1">Información de Pago</p>
                                         <p class="text-xs text-gray-600">
@@ -329,7 +329,7 @@
                 <h2 class="text-2xl font-bold text-gray-900 mb-2">Reserva No Encontrada</h2>
                 <p class="text-gray-600 mb-6">No se encontró la información de la reserva solicitada.</p>
                 <a href="{{ route('reservation.show') }}" 
-                   class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300">
+                   class="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300">
                     <i class="fas fa-arrow-left"></i>
                     <span>Volver a Reservar</span>
                 </a>
@@ -346,7 +346,7 @@
 
             <!-- Modal panel -->
             <div class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                <div class="bg-gradient-to-r from-blue-600 to-blue-800 px-6 py-4">
+                <div class="bg-gradient-to-r from-gray-600 to-gray-800 px-6 py-4">
                     <h3 class="text-2xl font-bold text-white flex items-center gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-7 h-7">
                             <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z" />
@@ -358,9 +358,9 @@
                     <div class="space-y-6">
                         <div class="flex flex-col items-center justify-center py-8">
                             <div class="relative">
-                                <div class="w-24 h-24 border-8 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
+                                <div class="w-24 h-24 border-8 border-gray-200 border-t-gray-600 rounded-full animate-spin"></div>
                                 <div class="absolute inset-0 flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10 text-blue-600 animate-pulse">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10 text-gray-600 animate-pulse">
                                         <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
                                     </svg>
                                 </div>
@@ -368,12 +368,12 @@
                             <p class="mt-6 text-xl font-bold text-gray-800">Preparando tu pago seguro...</p>
                             <p class="mt-2 text-sm text-gray-600 text-center">Por favor espera mientras te redirigimos a la pasarela de pago</p>
                         </div>
-                        <div class="bg-blue-50 rounded-xl p-4 border-2 border-blue-200">
+                        <div class="bg-gray-50 rounded-xl p-4 border-2 border-gray-200">
                             <div class="flex items-start gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5">
                                     <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" />
                                 </svg>
-                                <p class="text-sm text-blue-900">
+                                <p class="text-sm text-gray-900">
                                     <span class="font-semibold">No cierres esta ventana.</span> Estamos generando tu enlace de pago seguro con OpenPay.
                                 </p>
                             </div>

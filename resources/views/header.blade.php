@@ -1,5 +1,5 @@
 <!-- Header -->
-<header id="page-header" class="flex flex-none items-center py-10  bg-blue-900">
+<header id="page-header" class="flex flex-none items-center py-10  bg-gray-900">
     <div
       class="container mx-auto flex flex-col gap-6 px-4 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-0 lg:px-8 xl:max-w-6xl"
     >
@@ -56,3 +56,4 @@
     </div>
   </header>
   <!-- END Header -->
+

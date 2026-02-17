@@ -1,14 +1,14 @@
 <x-app-layout>
     @php
-        $seoTitle = 'Términos y Condiciones | Charros Sport Bar';
-        $seoDescription = 'Términos y condiciones de reserva en Charros Sport Bar. Conoce nuestras políticas de cancelación, políticas de acceso y reglas del establecimiento.';
-        $seoKeywords = 'terminos charros sport bar, politicas de reserva, condiciones de uso, cancelacion reservas';
+        $seoTitle = 'Términos y Condiciones | Charros Brew Bar';
+        $seoDescription = 'Términos y condiciones de reserva en Charros Brew Bar. Conoce nuestras políticas de cancelación, políticas de acceso y reglas del establecimiento.';
+        $seoKeywords = 'terminos Charros Brew Bar, politicas de reserva, condiciones de uso, cancelacion reservas';
         $ogType = 'article';
     @endphp
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Charros Sport Bar') }}
+            {{ __('Charros Brew Bar') }}
         </h2>
     </x-slot>
 
@@ -25,8 +25,8 @@
                                 Términos y Condiciones de Reservas
                             </h1>
                             
-                            <h2 class="text-xl font-semibold text-blue-800 mb-4 text-center">
-                                RESTAURANTE CHARROS SPORT BAR
+                            <h2 class="text-xl font-semibold text-gray-800 mb-4 text-center">
+                                RESTAURANTE Charros Brew Bar
                             </h2>
 
                             <div class="space-y-8">
@@ -120,3 +120,4 @@
         </main>
     </div>
 </x-app-layout>
+

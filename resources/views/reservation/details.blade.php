@@ -20,11 +20,11 @@
             <!-- Main card -->
             <div class="bg-white overflow-hidden shadow-lg sm:rounded-xl">
                 <!-- Header section with status -->
-                <div class="bg-gradient-to-r from-blue-700 to-blue-800 px-6 py-8 text-white">
+                <div class="bg-gradient-to-r from-gray-700 to-gray-800 px-6 py-8 text-white">
                     <div class="flex items-start justify-between">
                         <div>
                             <h3 class="text-2xl font-bold mb-2">Reservación #{{ $reservation->id }}</h3>
-                            <!-- <p class="text-blue-100 text-sm">{{ $reservation->transaction_id ?? 'Sin ID de transacción' }}</p> -->
+                            <!-- <p class="text-gray-100 text-sm">{{ $reservation->transaction_id ?? 'Sin ID de transacción' }}</p> -->
                         </div>
                         <div>
                             @php
@@ -109,7 +109,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             Información de Pago
                         </h4>
-                        <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
+                        <div class="bg-gradient-to-br from-green-50 to-gray-50 rounded-lg p-6 border border-green-200">
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div>
                                     <label class="text-xs font-medium text-gray-600 uppercase tracking-wider block mb-2">Costo Total</label>
@@ -149,7 +149,7 @@
                                             'pending'    => ['class' => 'bg-yellow-100 text-yellow-800','icon' => 'fa-clock',          'label' => 'Pendiente'],
                                             'processing' => ['class' => 'bg-yellow-100 text-yellow-800','icon' => 'fa-spinner fa-spin', 'label' => 'En proceso'],
                                             'failed'     => ['class' => 'bg-red-100 text-red-800',     'icon' => 'fa-xmark-circle',   'label' => 'Fallido'],
-                                            'refunded'   => ['class' => 'bg-blue-100 text-blue-800',   'icon' => 'fa-arrow-rotate-left','label' => 'Reembolsado'],
+                                            'refunded'   => ['class' => 'bg-gray-100 text-gray-800',   'icon' => 'fa-arrow-rotate-left','label' => 'Reembolsado'],
                                             'cancelled'  => ['class' => 'bg-red-100 text-red-800',     'icon' => 'fa-ban',            'label' => 'Cancelado'],
                                         ];
                                         $meta = $statusMap[$paymentStatus] ?? ['class' => 'bg-gray-100 text-gray-800', 'icon' => 'fa-info-circle', 'label' => ucfirst($paymentStatus)];
@@ -181,7 +181,7 @@
                                 Notas de la Reservación
                             </h4>
                             <!-- Add a note button -->
-                            <a href="{{ route('reservations.notes.create', $reservation->id) }}" class="bg-blue-600 text-white px-4 py-1 text-sm rounded hover:bg-blue-700 inline-flex items-center">
+                            <a href="{{ route('reservations.notes.create', $reservation->id) }}" class="bg-gray-600 text-white px-4 py-1 text-sm rounded hover:bg-gray-700 inline-flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
                                 Agregar Nota
                             </a>

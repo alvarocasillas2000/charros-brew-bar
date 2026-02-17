@@ -1,7 +1,7 @@
 <x-app-layout>
   <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-      {{ __('Charros Sport Bar') }}
+      {{ __('Charros Brew Bar') }}
     </h2>
   </x-slot>
 
@@ -44,7 +44,7 @@
       <!-- Page Content -->
       <main id="page-content" class="flex max-w-full flex-auto flex-col">
         <!-- Hero -->
-        <div class="bg-blue-900">
+        <div class="bg-gray-900">
           <!-- Header -->
 
           <!-- END Header -->
@@ -63,7 +63,7 @@
             <div class="text-center">
               <h2
                 class="mb-4 text-3xl font-extrabold text-balance text-white md:text-5xl">
-                Charros Sport Bar <br>
+                Charros Brew Bar <br>
                 Una nueva experiencia en el béisbol
               </h2>
               <h3
@@ -74,7 +74,7 @@
             <div class="flex flex-wrap justify-center gap-4 pt-10 pb-16">
               <button
                 type="button"
-                class="inline-flex items-center justify-center gap-2 rounded-full border text-2xl border-blue-800 bg-blue-800 px-10 py-8 leading-6 font-semibold text-white hover:border-blue-700/50 hover:bg-blue-700/50 hover:text-white focus:ring-3 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700">
+                class="inline-flex items-center justify-center gap-2 rounded-full border text-2xl border-gray-800 bg-gray-800 px-10 py-8 leading-6 font-semibold text-white hover:border-gray-700/50 hover:bg-gray-700/50 hover:text-white focus:ring-3 focus:ring-gray-500/50 focus:outline-hidden active:border-gray-700 active:bg-gray-700">
                 <a href="{{ route('reservation.show') }}">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -164,9 +164,9 @@
                 <div
                   class="relative mb-12 ml-3 inline-flex h-16 w-16 items-center justify-center">
                   <div
-                    class="absolute inset-0 -m-3 translate-x-1 translate-y-1 rounded-full bg-blue-300"></div>
+                    class="absolute inset-0 -m-3 translate-x-1 translate-y-1 rounded-full bg-gray-300"></div>
                   <div
-                    class="absolute inset-0 -m-3 rounded-full bg-blue-600/75"></div>
+                    class="absolute inset-0 -m-3 rounded-full bg-gray-600/75"></div>
                   <span
                     class="relative text-xl font-semibold text-white opacity-90 transition duration-150 ease-out group-hover:scale-125 group-hover:opacity-100">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline" style="color: #ffffff;">
@@ -183,9 +183,9 @@
                 <div
                   class="relative mb-12 ml-3 inline-flex h-16 w-16 items-center justify-center">
                   <div
-                    class="absolute inset-0 -m-3 translate-x-1 translate-y-1 rounded-full bg-blue-300"></div>
+                    class="absolute inset-0 -m-3 translate-x-1 translate-y-1 rounded-full bg-gray-300"></div>
                   <div
-                    class="absolute inset-0 -m-3 rounded-full bg-blue-600/75"></div>
+                    class="absolute inset-0 -m-3 rounded-full bg-gray-600/75"></div>
                   <span
                     class="relative text-xl font-semibold text-white opacity-90 transition duration-150 ease-out group-hover:scale-125 group-hover:opacity-100">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline">
@@ -203,9 +203,9 @@
                 <div
                   class="relative mb-12 ml-3 inline-flex h-16 w-16 items-center justify-center">
                   <div
-                    class="absolute inset-0 -m-3 translate-x-1 translate-y-1 rounded-full bg-blue-300"></div>
+                    class="absolute inset-0 -m-3 translate-x-1 translate-y-1 rounded-full bg-gray-300"></div>
                   <div
-                    class="absolute inset-0 -m-3 rounded-full bg-blue-600/75"></div>
+                    class="absolute inset-0 -m-3 rounded-full bg-gray-600/75"></div>
                   <span
                     class="relative text-xl font-semibold text-white opacity-90 transition duration-150 ease-out group-hover:scale-125 group-hover:opacity-100">:)</span>
                 </div>
@@ -222,7 +222,7 @@
 
         <!-- How it works -->
         <div class="relative bg-white">
-          <div class="absolute inset-0 skew-y-1 bg-blue-900"></div>
+          <div class="absolute inset-0 skew-y-1 bg-gray-900"></div>
           <div
             class="relative container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
             <!-- Heading -->
@@ -240,7 +240,7 @@
                 class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10">
                 <!-- Falta un SVG aqui -->
                 <svg height="48" viewBox="0 0 33.033 33.549" width="48" xmlns="http://www.w3.org/2000/svg"
-                  class="hi-outline hi-cube mb-5 inline-block h-12 w-12 text-blue-300"
+                  class="hi-outline hi-cube mb-5 inline-block h-12 w-12 text-gray-300"
                   fill="currentColor">
                   <g transform="translate(-607.873 -577.167)">
                     <path d="M638.546,610.716a1,1,0,0,1-.942-1.334c1.785-5.044,1.745-8.637-.12-10.679-3.26-3.568-11.186-1.6-11.266-1.574l-1.247.318V586l.016-.087a3.188,3.188,0,0,0-.274-2.085.7.7,0,0,0-.609-.226.774.774,0,0,0-.657.247,3.155,3.155,0,0,0-.346,2.033l.011.144v15.115l-1.155-.18c-1.766-.279-2.336.02-2.408.158-.459.9,2.05,4.66,5.264,7.888a1,1,0,0,1-1.418,1.412c-1.681-1.689-7.053-7.412-5.627-10.208.645-1.265,2.182-1.425,3.344-1.359V586.094a4.926,4.926,0,0,1,.822-3.55,2.768,2.768,0,0,1,2.17-.939,2.678,2.678,0,0,1,2.144.944,4.94,4.94,0,0,1,.723,3.624v8.757c2.643-.466,8.781-1.085,11.987,2.42,2.406,2.629,2.585,6.9.532,12.7A1,1,0,0,1,638.546,610.716Z" />
@@ -263,7 +263,7 @@
                   fill="none"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="hi-outline hi-cube mb-5 inline-block h-12 w-12 text-blue-300">
+                  class="hi-outline hi-cube mb-5 inline-block h-12 w-12 text-gray-300">
                   <polyline
                     clip-rule="evenodd"
                     fill="none"
@@ -290,7 +290,7 @@
               <div
                 class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10 sm:col-span-2 lg:col-span-1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
-                  class="hi-outline hi-cube mb-5 inline-block h-12 w-12 text-blue-300"
+                  class="hi-outline hi-cube mb-5 inline-block h-12 w-12 text-gray-300"
                   fill="currentColor">
                   <path d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M11.9,2c-0.1,0.9-0.3,1.8-0.6,2.6l-0.2-0.2 c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7L11,5.6c-0.4,0.9-1,1.8-1.7,2.6L8.4,7.3c-0.2-0.2-0.5-0.2-0.7,0 C7.5,7.5,7.5,7.8,7.7,8l0.9,0.9C7.9,9.6,7,10.2,6.1,10.7l-0.6-0.6c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l0.3,0.3 c-1,0.4-2.1,0.7-3.2,0.8C2,6.5,6.5,2,11.9,2z M11.1,22c-4.8-0.4-8.6-4.2-9-9c1.4-0.1,2.7-0.5,3.9-1l1,1c0.2,0.2,0.5,0.2,0.7,0 c0.2-0.2,0.2-0.5,0-0.7l-0.8-0.8c0.9-0.5,1.7-1.1,2.4-1.8l0.5,0.5c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7L10,8.9 c0.7-0.8,1.3-1.6,1.7-2.6l0.9,0.9c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7l-1.2-1.2c0.4-1,0.7-2.2,0.8-3.3c4.8,0.4,8.6,4.2,9,9 c-1.2,0.1-2.3,0.4-3.3,0.8l-1.4-1.4c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l1.1,1.1c-0.9,0.5-1.8,1-2.6,1.7l-0.7-0.7 c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l0.7,0.7c-0.7,0.7-1.3,1.6-1.8,2.4l-1-1c-0.2-0.2-0.5-0.2-0.7,0s-0.2,0.5,0,0.7 l1.2,1.2C11.5,19.3,11.2,20.6,11.1,22z M12.1,22c0.1-1.1,0.4-2.2,0.8-3.2L13,19c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7 l-0.4-0.4c0.5-0.9,1.1-1.7,1.8-2.5l0.8,0.8c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7l-0.7-0.7c0.8-0.7,1.6-1.2,2.6-1.7l0.3,0.3 c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7c0.8-0.3,1.7-0.5,2.6-0.6C22,17.5,17.5,22,12.1,22z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                   <polyline clip-rule="evenodd" fill="none" fill-rule="evenodd" points="21.2,5.6 11.2,15.2 6.8,10.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
@@ -306,10 +306,10 @@
             </div>
             <!-- END Steps -->
             <a href="{{ route('reservation.show') }}"
-              class="inline-flex items-center justify-center rounded-full leading-6 font-semibold text-white hover:border-blue-700/50 hover:bg-blue-700/50 hover:text-white focus:ring-3 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700">
+              class="inline-flex items-center justify-center rounded-full leading-6 font-semibold text-white hover:border-gray-700/50 hover:bg-gray-700/50 hover:text-white focus:ring-3 focus:ring-gray-500/50 focus:outline-hidden active:border-gray-700 active:bg-gray-700">
               <button
                 type="button"
-                class="inline-flex items-center justify-center gap-2 rounded-full border border-blue-800 bg-blue-800 px-6 py-4 leading-6 font-semibold text-white hover:border-blue-700/50 hover:bg-blue-700/50 hover:text-white focus:ring-3 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700">
+                class="inline-flex items-center justify-center gap-2 rounded-full border border-gray-800 bg-gray-800 px-6 py-4 leading-6 font-semibold text-white hover:border-gray-700/50 hover:bg-gray-700/50 hover:text-white focus:ring-3 focus:ring-gray-500/50 focus:outline-hidden active:border-gray-700 active:bg-gray-700">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" data-slot="icon" class="hi-mini hi-arrow-right inline-block size-5 opacity-50">
                   <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
                 </svg>
@@ -343,7 +343,7 @@
                 class="flex flex-col rounded-xl border-2 border-gray-200 bg-white">
                 <div class="grow p-5 lg:p-6">
                   <span
-                    class="mb-4 inline-block rounded-full text-sm font-semibold tracking-wider text-blue-600 uppercase">
+                    class="mb-4 inline-block rounded-full text-sm font-semibold tracking-wider text-gray-600 uppercase">
                     Zona P
                   </span>
                   <div class="mb-2">
@@ -368,9 +368,9 @@
 
               <!-- Agency Plan -->
               <div
-                class="relative flex flex-col rounded-xl border-2 border-blue-400 bg-white">
+                class="relative flex flex-col rounded-xl border-2 border-gray-400 bg-white">
                 <div
-                  class="absolute top-0 right-0 flex size-10 items-center justify-center text-blue-600">
+                  class="absolute top-0 right-0 flex size-10 items-center justify-center text-gray-600">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -385,7 +385,7 @@
                 </div>
                 <div class="grow p-5 lg:p-6">
                   <span
-                    class="mb-4 inline-flex items-center gap-1 rounded-full text-sm font-semibold tracking-wider text-blue-600 uppercase"><span>Mesa VIP</span></span>
+                    class="mb-4 inline-flex items-center gap-1 rounded-full text-sm font-semibold tracking-wider text-gray-600 uppercase"><span>Mesa VIP</span></span>
                   <div class="mb-2">
                     <span class="text-3xl font-extrabold lg:text-4xl">$xx</span>
                     <span class="font-semibold text-gray-700">por persona</span>
@@ -396,10 +396,10 @@
                     <span class="font-semibold">$xx en consumo</span>
                   </p>
                 </div>
-                <div class="rounded-b-lg bg-blue-50 p-5 lg:p-6">
+                <div class="rounded-b-lg bg-gray-50 p-5 lg:p-6">
                   <a
                     href="{{ route('reservation.show') }}"
-                    class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-blue-800 bg-blue-800 px-4 py-3 leading-6 font-semibold text-white hover:border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-3 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700 xl:w-1/2">
+                    class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-gray-800 bg-gray-800 px-4 py-3 leading-6 font-semibold text-white hover:border-gray-700 hover:bg-gray-700 hover:text-white focus:ring-3 focus:ring-gray-500/50 focus:outline-hidden active:border-gray-700 active:bg-gray-700 xl:w-1/2">
                     Reservar
                   </a>
                 </div>
@@ -419,21 +419,21 @@
               <dl class="space-y-1 px-5 py-16 lg:py-32">
                 <dt class="text-4xl font-extrabold text-white">★★★</dt>
                 <dd
-                  class="text-sm font-semibold tracking-wide text-blue-400 uppercase">
+                  class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
                   LMP
                 </dd>
               </dl>
               <dl class="space-y-1 px-5 py-16 lg:py-32">
                 <dt class="text-4xl font-extrabold text-white">★★</dt>
                 <dd
-                  class="text-sm font-semibold tracking-wide text-blue-400 uppercase">
+                  class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
                   LMB
                 </dd>
               </dl>
               <dl class="space-y-1 px-5 py-16 lg:py-32">
                 <dt class="text-4xl font-extrabold text-white">★</dt>
                 <dd
-                  class="text-sm font-semibold tracking-wide text-blue-400 uppercase">
+                  class="text-sm font-semibold tracking-wide text-gray-400 uppercase">
                   LMS
                 </dd>
               </dl>

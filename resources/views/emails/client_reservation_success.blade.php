@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reserva Confirmada - Charros Sport Bar</title>
+  <title>Reserva Confirmada - Charros Brew Bar</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px 10px;">
@@ -13,7 +13,7 @@
     <div style="background: #1e3a8a; padding: 40px 32px; text-align: center; position: relative;">
       <!-- Logo -->
       <div style="margin-bottom: 24px;">
-        <img src="{{ asset('assets/img/sportbarlogo.png') }}" alt="Charros Sport Bar" style="max-width: 180px; height: auto; display: inline-block;" />
+        <img src="{{ asset('assets/img/sportbarlogo.png') }}" alt="Charros Brew Bar" style="max-width: 180px; height: auto; display: inline-block;" />
       </div>
       <h1 style="font-size: 32px; font-weight: 700; color: #ffffff; margin: 0; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">¡Reserva Confirmada!</h1>
       <p style="color: #e0e7ff; font-size: 16px; margin: 8px 0 0; font-weight: 400;">Tu lugar está asegurado</p>
@@ -118,7 +118,7 @@
           ¡Gracias por reservar con nosotros! 🙌
         </p>
         <p style="color: #047857; font-size: 14px; margin: 8px 0 0;">
-          Esperamos que disfrutes tu experiencia en Charros Sport Bar
+          Esperamos que disfrutes tu experiencia en Charros Brew Bar
         </p>
       </div>
 
@@ -149,10 +149,11 @@
         <p style="color: #64748b; font-size: 12px; margin: 0;">
           <a href="{{ route('terminos') }}" target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 500;">Términos y Condiciones</a>
           <span style="margin: 0 8px; color: #cbd5e1;">•</span>
-          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Sport Bar</span>
+          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Brew Bar</span>
         </p>
       </div>
     </div>
   </div>
 </body>
 </html>
+

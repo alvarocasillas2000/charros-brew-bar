@@ -7,24 +7,24 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- SEO Meta Tags -->
-    <title>{{ $seoTitle ?? 'Charros Sport Bar' }}</title>
+    <title>{{ $seoTitle ?? 'Charros Brew Bar' }}</title>
     <meta name="description" content="{{ $seoDescription ?? 'Disfruta del béisbol de Charros de Jalisco en nuestro Sport Bar con vista privilegiada al estadio. Reserva tu mesa y disfruta de comida, bebidas y la mejor atmósfera deportiva en Guadalajara.' }}">
     <meta name="keywords" content="{{ $seoKeywords ?? 'sport bar guadalajara, charros de jalisco, estadio de béisbol, reservar mesa sport bar, vista al campo béisbol, bebidas y botanas guadalajara, eventos deportivos gdl' }}">
-    <meta name="author" content="Charros Sport Bar">
+    <meta name="author" content="Charros Brew Bar">
     <link rel="canonical" href="{{ $canonical ?? url()->current() }}">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{{ $ogTitle ?? $seoTitle ?? 'Charros Sport Bar | Vista Privilegiada del Estadio' }}">
+    <meta property="og:title" content="{{ $ogTitle ?? $seoTitle ?? 'Charros Brew Bar | Vista Privilegiada del Estadio' }}">
     <meta property="og:description" content="{{ $ogDescription ?? $seoDescription ?? 'Disfruta del béisbol de Charros de Jalisco con vista privilegiada, comida y bebidas.' }}">
     <meta property="og:image" content="{{ $ogImage ?? asset('assets/img/sportbarlogo.png') }}">
     <meta property="og:url" content="{{ $ogUrl ?? url()->current() }}">
     <meta property="og:type" content="{{ $ogType ?? 'website' }}">
-    <meta property="og:site_name" content="Charros Sport Bar">
+    <meta property="og:site_name" content="Charros Brew Bar">
     <meta property="og:locale" content="es_MX">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ $twitterTitle ?? $seoTitle ?? 'Charros Sport Bar | Vista Privilegiada del Estadio' }}">
+    <meta name="twitter:title" content="{{ $twitterTitle ?? $seoTitle ?? 'Charros Brew Bar | Vista Privilegiada del Estadio' }}">
     <meta name="twitter:description" content="{{ $twitterDescription ?? $seoDescription ?? 'Disfruta del béisbol de Charros de Jalisco con vista privilegiada, comida y bebidas.' }}">
     <meta name="twitter:image" content="{{ $twitterImage ?? asset('assets/img/sportbarlogo.png') }}">
 
@@ -83,7 +83,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #1e3a8a; /* Blue background */
+            background-color: #111111;
             display: flex;
             justify-content: center;
             align-items: center;

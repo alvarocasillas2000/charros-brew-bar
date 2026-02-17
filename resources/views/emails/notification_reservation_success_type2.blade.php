@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nueva Reserva - Charros Sport Bar</title>
+  <title>Nueva Reserva - Charros Brew Bar</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
@@ -17,7 +17,7 @@
       <table style="width: 100%; max-width: 320px; margin: 0 auto 24px;">
         <tr>
           <td style="width: 50%; text-align: center; padding: 0 10px;">
-        <img src="{{ asset('assets/img/sportbarlogo.png') }}" alt="Charros Sport Bar" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+        <img src="{{ asset('assets/img/sportbarlogo.png') }}" alt="Charros Brew Bar" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
           </td>
           <td style="width: 50%; text-align: center; padding: 0 10px;">
         <img src="{{ asset('assets/img/logo_sdc.png') }}" alt="Serie del Caribe 2026" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
@@ -202,7 +202,7 @@
           Este es un correo generado automáticamente. Por favor, no respondas a este mensaje.
         </p>
         <p style="color: #64748b; font-size: 12px; margin: 0;">
-          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Sport Bar</span>
+          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Brew Bar</span>
         </p>
       </div>
     </div>

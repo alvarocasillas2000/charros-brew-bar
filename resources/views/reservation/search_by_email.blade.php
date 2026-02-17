@@ -1,7 +1,7 @@
 <x-app-layout>
     @php
-        $seoTitle = 'Buscar mi Reserva | Charros Sport Bar';
-        $seoDescription = 'Busca y consulta tus reservaciones en Charros Sport Bar. Ingresa tu correo para ver detalles de tu reserva, fecha del evento y número de confirmación.';
+        $seoTitle = 'Buscar mi Reserva | Charros Brew Bar';
+        $seoDescription = 'Busca y consulta tus reservaciones en Charros Brew Bar. Ingresa tu correo para ver detalles de tu reserva, fecha del evento y número de confirmación.';
         $seoKeywords = 'buscar reserva charros, consultar reservacion sport bar, mis reservas charros jalisco, estado de reserva';
         $ogType = 'website';
     @endphp
@@ -13,7 +13,7 @@
     </x-slot>
 
     <!-- Hero Section -->
-    <div class="relative bg-gradient-to-tr from-blue-900 via-blue-800 to-blue-900 overflow-hidden py-16">
+    <div class="relative bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 overflow-hidden py-16">
         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE0YzAtMS4xLjktMiAyLTJoMmMxLjEgMCAyIC45IDIgMnYyYzAgMS4xLS45IDItMiAyaC0yYy0xLjEgMC0yLS45LTItMnYtMnptMCAwIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-10"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center space-y-4">
@@ -21,9 +21,9 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
                 <h1 class="text-4xl font-black text-white md:text-5xl drop-shadow-lg">
-                    Buscar mis <span class="text-blue-300">Reservaciones</span>
+                    Buscar mis <span class="text-gray-300">Reservaciones</span>
                 </h1>
-                <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+                <p class="text-xl text-gray-100 max-w-2xl mx-auto">
                     Ingresa tu correo electrónico para ver todas tus reservaciones
                 </p>
             </div>
@@ -34,8 +34,8 @@
     <div class="relative -mt-8 pb-12">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
-                <div class="flex items-center gap-3 pb-6 border-b-2 border-blue-200 mb-8">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                <div class="flex items-center gap-3 pb-6 border-b-2 border-gray-200 mb-8">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-white">
                             <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
                             <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
@@ -53,7 +53,7 @@
                             type="email" 
                             id="email"
                             name="email" 
-                            class="block w-full rounded-xl border-2 border-gray-200 px-4 py-4 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-base" 
+                            class="block w-full rounded-xl border-2 border-gray-200 px-4 py-4 shadow-sm focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all duration-200 text-base" 
                             placeholder="ejemplo@correo.com" 
                             value="{{ $email }}"
                             required>
@@ -61,7 +61,7 @@
                     <div class="flex justify-center pt-4">
                         <button 
                             type="submit" 
-                            class="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 px-12 py-4 leading-6 font-bold text-white hover:from-blue-700 hover:to-blue-900 hover:scale-105 focus:ring-4 focus:ring-blue-500/50 focus:outline-hidden transition-all duration-300 shadow-xl text-lg">
+                            class="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-gray-600 to-gray-800 px-12 py-4 leading-6 font-bold text-white hover:from-gray-700 hover:to-gray-900 hover:scale-105 focus:ring-4 focus:ring-gray-500/50 focus:outline-hidden transition-all duration-300 shadow-xl text-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 group-hover:scale-110 transition-transform">
                                 <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
                             </svg>
@@ -99,7 +99,7 @@
     <div class="pb-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
-                <div class="bg-gradient-to-r from-blue-600 to-blue-800 px-8 py-6">
+                <div class="bg-gradient-to-r from-gray-600 to-gray-800 px-8 py-6">
                     @if ($businessDayId)
                     @php
                     $selectedBusinessDay = $businessDays->firstWhere('id', $businessDayId);
@@ -146,10 +146,10 @@
                         </thead>
                         <tbody class="divide-y divide-gray-200">
                             @foreach ($reservations as $reservation)
-                            <tr class="hover:bg-blue-50 transition-colors duration-150">
+                            <tr class="hover:bg-gray-50 transition-colors duration-150">
                                 <td class="px-6 py-5">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
                                             <span class="text-white font-bold text-sm">{{ strtoupper(substr($reservation->name ?? 'N', 0, 1)) }}</span>
                                         </div>
                                         <div>
@@ -165,7 +165,7 @@
                                     </div>
                                 </td>
                                 <td class="px-6 py-5">
-                                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800">
+                                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-gray-100 text-gray-800">
                                         {{ $reservation->area->name ?? 'N/A' }}
                                     </span>
                                 </td>
@@ -189,7 +189,7 @@
                                 @if($reservation->status === 'confirmed')
                                 <td class="px-6 py-5 text-center">
                                     <a href="{{ route('reservation.resendEmail', $reservation->id) }}" 
-                                       class="group inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-700 hover:scale-105 focus:ring-4 focus:ring-blue-500/50 focus:outline-hidden transition-all duration-300 shadow-lg">
+                                       class="group inline-flex items-center justify-center gap-2 rounded-full bg-gray-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-gray-700 hover:scale-105 focus:ring-4 focus:ring-gray-500/50 focus:outline-hidden transition-all duration-300 shadow-lg">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 group-hover:scale-110 transition-transform">
                                             <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
                                             <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />

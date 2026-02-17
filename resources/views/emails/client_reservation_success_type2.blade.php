@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reserva Confirmada - Charros Sport Bar</title>
+  <title>Reserva Confirmada - Charros Brew Bar</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px 10px;">
@@ -15,7 +15,7 @@
       <table style="width: 100%; max-width: 320px; margin: 0 auto 24px;">
         <tr>
           <td style="width: 50%; text-align: center; padding: 0 10px;">
-        <img src="{{ asset('assets/img/sportbarlogo.png') }}" alt="Charros Sport Bar" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+        <img src="{{ asset('assets/img/sportbarlogo.png') }}" alt="Charros Brew Bar" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
           </td>
           <td style="width: 50%; text-align: center; padding: 0 10px;">
         <img src="{{ asset('assets/img/logo_sdc.png') }}" alt="Serie del Caribe 2026" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
@@ -127,7 +127,7 @@
           ¡Gracias por reservar con nosotros! 🙌
         </p>
         <p style="color: #047857; font-size: 14px; margin: 8px 0 0;">
-          Esperamos que disfrutes tu experiencia en Charros Sport Bar
+          Esperamos que disfrutes tu experiencia en Charros Brew Bar
         </p>
       </div>
 
@@ -158,10 +158,11 @@
         <p style="color: #64748b; font-size: 12px; margin: 0;">
           <a href="{{ route('terminos') }}" target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 500;">Términos y Condiciones</a>
           <span style="margin: 0 8px; color: #cbd5e1;">•</span>
-          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Sport Bar - Serie del Caribe</span>
+          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Brew Bar - Serie del Caribe</span>
         </p>
       </div>
     </div>
   </div>
 </body>
 </html>
+

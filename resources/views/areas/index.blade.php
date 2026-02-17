@@ -14,7 +14,7 @@
     <div class="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-lg sm:rounded-2xl border border-gray-100">
-                <div class="px-6 py-5 bg-gradient-to-r from-blue-600 to-blue-800 border-b border-blue-700">
+                <div class="px-6 py-5 bg-gradient-to-r from-gray-600 to-gray-800 border-b border-gray-700">
                     <div class="flex items-center gap-4">
                         <a href="{{ route('dashboard') }}" class="text-white/90 hover:text-white text-sm flex items-center gap-2 hover:scale-105 transition-transform">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /></svg>
@@ -32,9 +32,9 @@
 
                 <div class="p-6">
                     <!-- Filter Section -->
-                    <div class="mb-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 p-5 shadow-sm">
+                    <div class="mb-6 bg-gradient-to-r from-gray-50 to-gray-50 rounded-xl border border-gray-200 p-5 shadow-sm">
                         <div class="flex items-center mb-4">
-                            <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center mr-3">
+                            <div class="w-8 h-8 rounded-full bg-gray-600 flex items-center justify-center mr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
                                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
                                 </svg>
@@ -44,7 +44,7 @@
                         <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-end">
                             <div class="flex-1">
                                 <label for="businessDayFilter" class="block text-sm font-medium text-gray-700 mb-2">Seleccionar juego</label>
-                                <select id="businessDayFilter" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors duration-200 text-sm">
+                                <select id="businessDayFilter" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-gray-500 focus:ring-gray-500 transition-colors duration-200 text-sm">
                                     <option value="">Todos los juegos</option>
                                     @foreach ($businessDays as $businessDay)
                                         <option value="{{ $businessDay->id }}" {{ $businessDayId == $businessDay->id ? 'selected' : '' }}>
@@ -106,10 +106,10 @@
                                 </thead>
                                 <tbody class="bg-white divide-y divide-gray-100">
                                     @foreach($areas as $area)
-                                    <tr class="hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 cursor-pointer transition-all duration-200 group" onclick="window.location='{{ route('areas.show', $area->id) }}'">
+                                    <tr class="hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-50 cursor-pointer transition-all duration-200 group" onclick="window.location='{{ route('areas.show', $area->id) }}'">
                                         <td class="px-4 py-3">
                                             <div class="flex items-center gap-2">
-                                                <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:scale-110 transition-all duration-200">
+                                                <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:scale-110 transition-all duration-200">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 019 14.437V9.564z" /></svg>
                                                 </div>
                                                 <span class="text-xs font-medium text-gray-900">{{ $area->businessDay->description }}</span>
@@ -122,7 +122,7 @@
                                             </div>
                                         </td>
                                         <td class="px-4 py-3">
-                                            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-semibold bg-gradient-to-r from-purple-100 to-indigo-100 text-purple-800 border border-purple-200">
+                                            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-semibold bg-gradient-to-r from-gray-100 to-gray-100 text-gray-800 border border-gray-200">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
                                                 {{ $area->area->name }}
                                             </span>
@@ -147,7 +147,7 @@
                                         <td class="px-4 py-3 text-right" onclick="event.stopPropagation()">
                                             <div class="relative inline-block" x-data="{ open: false }">
                                                 <button @click="open = !open" @click.away="open = false" 
-                                                    class="inline-flex items-center justify-center w-9 h-9 text-gray-600 hover:text-white bg-gray-100 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-700 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md">
+                                                    class="inline-flex items-center justify-center w-9 h-9 text-gray-600 hover:text-white bg-gray-100 hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-700 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" /></svg>
                                                 </button>
                                                 
@@ -162,8 +162,8 @@
                                                      style="display: none;">
                                                     <div class="py-2">
                                                         <a href="{{ route('areas.show', $area->id) }}" 
-                                                           class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:text-blue-700 transition-colors">
-                                                            <div class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
+                                                           class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-50 hover:text-gray-700 transition-colors">
+                                                            <div class="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                                             </div>
                                                             <span class="font-medium">Ver detalles</span>
@@ -188,9 +188,9 @@
 
                     <div class="mt-6 flex items-center justify-between px-4 py-4 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200">
                         <div class="text-sm text-gray-600">
-                            Mostrando <span class="font-semibold text-blue-600">{{ $areas->firstItem() }}</span> 
-                            a <span class="font-semibold text-blue-600">{{ $areas->lastItem() }}</span> 
-                            de <span class="font-semibold text-blue-600">{{ $areas->total() }}</span> resultados
+                            Mostrando <span class="font-semibold text-gray-600">{{ $areas->firstItem() }}</span> 
+                            a <span class="font-semibold text-gray-600">{{ $areas->lastItem() }}</span> 
+                            de <span class="font-semibold text-gray-600">{{ $areas->total() }}</span> resultados
                         </div>
                         <div>
                             {{ $areas->links() }}

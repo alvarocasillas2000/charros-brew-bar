@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generación de Boletos - Charros Sport Bar</title>
+  <title>Generación de Boletos - Charros Brew Bar</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px 10px;">
@@ -13,7 +13,7 @@
     <div style="background: #1e3a8a; padding: 40px 32px; text-align: center; position: relative;">
       <!-- Logo -->
       <div style="margin-bottom: 24px;">
-        <img src="{{ url('/assets/img/sportbarlogo.png') }}" alt="Charros Sport Bar" style="max-width: 180px; height: auto; display: inline-block;" />
+        <img src="{{ url('/assets/img/sportbarlogo.png') }}" alt="Charros Brew Bar" style="max-width: 180px; height: auto; display: inline-block;" />
       </div>
       <h1 style="font-size: 32px; font-weight: 700; color: #ffffff; margin: 0; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Generar Boletos</h1>
       <p style="color: #e0e7ff; font-size: 16px; margin: 8px 0 0; font-weight: 400;">Nueva reserva confirmada</p>
@@ -140,10 +140,11 @@
           Este es un correo generado automáticamente. Por favor, no respondas a este mensaje.
         </p>  
         <p style="color: #64748b; font-size: 12px; margin: 0;">
-          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Sport Bar</span>
+          <span style="color: #94a3b8;">© {{ date('Y') }} Charros Brew Bar</span>
         </p>
       </div>
     </div>
   </div>
 </body>
 </html>
+

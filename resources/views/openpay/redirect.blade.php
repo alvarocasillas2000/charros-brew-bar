@@ -1,7 +1,7 @@
 <x-app-layout>
     
     <!-- Hero Section with Gradient Background -->
-    <div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="min-h-screen bg-gradient-to-br from-gray-50 via-gray-50 to-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
             
             @if($error)
@@ -23,7 +23,7 @@
                         
                         <div class="space-y-4">
                             <a href="/" 
-                               class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105">
+                               class="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105">
                                 <i class="fas fa-home"></i>
                                 <span>Volver al Inicio</span>
                             </a>
@@ -31,7 +31,7 @@
                             <div class="pt-4 border-t border-gray-200">
                                 <p class="text-gray-600">
                                     Si necesitas ayuda, por favor 
-                                    <a href="{{ route('contacto') }}" class="text-blue-600 hover:text-blue-700 underline font-semibold">
+                                    <a href="{{ route('contacto') }}" class="text-gray-600 hover:text-gray-700 underline font-semibold">
                                         contáctanos
                                     </a>
                                 </p>
@@ -68,14 +68,14 @@
                             </p>
                         </div>
                     @else
-                        <div class="bg-gradient-to-r from-blue-500 to-indigo-600 px-6 py-8 text-center">
+                        <div class="bg-gradient-to-r from-gray-500 to-gray-600 px-6 py-8 text-center">
                             <div class="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full mb-4 shadow-lg">
-                                <i class="fas fa-info-circle text-blue-600 text-4xl"></i>
+                                <i class="fas fa-info-circle text-gray-600 text-4xl"></i>
                             </div>
                             <h1 class="text-3xl font-bold text-white mb-2">
                                 Estado del Pago
                             </h1>
-                            <p class="text-blue-100">
+                            <p class="text-gray-100">
                                 {{ ucfirst($status) }}
                             </p>
                         </div>
@@ -112,12 +112,12 @@
                                     </div>
                                 </div>
                             @else
-                                <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
                                     <div class="flex items-start space-x-4">
-                                        <i class="fas fa-info-circle text-blue-600 text-2xl mt-1"></i>
+                                        <i class="fas fa-info-circle text-gray-600 text-2xl mt-1"></i>
                                         <div class="flex-1">
-                                            <h3 class="text-lg font-bold text-blue-900 mb-2">Estado: {{ ucfirst($status) }}</h3>
-                                            <p class="text-blue-700">
+                                            <h3 class="text-lg font-bold text-gray-900 mb-2">Estado: {{ ucfirst($status) }}</h3>
+                                            <p class="text-gray-700">
                                                 Recuerda que tu pago tiene como fecha de vencimiento 2 hrs a partir de la generación del mismo. 
                                                 Evita la cancelación de tu reserva.
                                             </p>
@@ -134,8 +134,8 @@
                                 <div class="space-y-4">
                                     <div class="flex items-center justify-between pb-3 border-b border-gray-300">
                                         <div class="flex items-center space-x-3">
-                                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                                <i class="fas fa-check text-blue-600"></i>
+                                            <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+                                                <i class="fas fa-check text-gray-600"></i>
                                             </div>
                                             <span class="text-gray-700 font-medium">Estado</span>
                                         </div>
@@ -151,7 +151,7 @@
                                                     En Proceso
                                                 </span>
                                             @else
-                                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-800">
+                                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-800">
                                                     {{ ucfirst($status) }}
                                                 </span>
                                             @endif
@@ -173,8 +173,8 @@
                                     @if($reservation)
                                     <div class="flex items-start justify-between">
                                         <div class="flex items-center space-x-3">
-                                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                                <i class="fas fa-ticket-alt text-purple-600"></i>
+                                            <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+                                                <i class="fas fa-ticket-alt text-gray-600"></i>
                                             </div>
                                             <span class="text-gray-700 font-medium">Reserva</span>
                                         </div>
@@ -190,7 +190,7 @@
                             <!-- Action Buttons -->
                             <div class="flex flex-col sm:flex-row gap-4 pt-4">
                                 <a href="/" 
-                                   class="flex-1 inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                                   class="flex-1 inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                                     <i class="fas fa-home"></i>
                                     <span>Volver al Inicio</span>
                                 </a>
@@ -205,14 +205,14 @@
                             </div>
                             
                             <!-- Help Section -->
-                            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-                                <div class="flex items-center justify-center space-x-2 text-blue-900 mb-2">
+                            <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">
+                                <div class="flex items-center justify-center space-x-2 text-gray-900 mb-2">
                                     <i class="fas fa-question-circle"></i>
                                     <h4 class="font-bold">¿Necesitas Ayuda?</h4>
                                 </div>
-                                <p class="text-blue-700">
+                                <p class="text-gray-700">
                                     Si tienes alguna pregunta o necesitas asistencia, por favor 
-                                    <a href="{{ route('contacto') }}" class="text-blue-600 hover:text-blue-800 underline font-semibold">
+                                    <a href="{{ route('contacto') }}" class="text-gray-600 hover:text-gray-800 underline font-semibold">
                                         contáctanos
                                     </a>
                                 </p>
