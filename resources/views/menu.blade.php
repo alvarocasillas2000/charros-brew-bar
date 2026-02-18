@@ -50,7 +50,7 @@
         <!-- Page Content -->
         <main id="page-content" class="flex max-w-full flex-auto flex-col">
             <!-- Hero Section with Gradient -->
-            <div class="bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900">
+            <div class="bg-gradient-to-tr from-gray-950 via-gray-900 to-gray-950">
                 <div class="container mx-auto px-4 pt-16 lg:px-8 lg:pt-32 xl:max-w-6xl text-center">
                     <!-- Header Icon -->
                     <div class="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full mb-6 shadow-2xl animate-bounce">
@@ -58,16 +58,16 @@
                     </div>
                     
                     <h2 class="mb-6 text-4xl font-black text-white md:text-6xl tracking-tight drop-shadow-lg animate-slide-up">
-                        Nuestro Menú
+                        Nuestro <span class="text-yellow-300">Menú</span>
                     </h2>
                     <h3 class="mx-auto text-xl font-medium text-gray-100 md:text-2xl md:leading-relaxed lg:w-2/3 pb-16 animate-slide-up-delay">
-                        Disfruta de nuestras <span class="font-bold text-white">deliciosas opciones</span> en botanas, bebidas y más.
+                        Disfruta de nuestras <span class="font-bold text-yellow-300">deliciosas opciones</span> en botanas, bebidas y más.
                     </h3>
                 </div>
                 
                 <!-- Menu Image Container -->
                 <div class="container mx-auto px-4 lg:px-8 xl:max-w-6xl">
-                    <div class="relative mx-5 pb-12 -mb-20 rounded-2xl bg-white p-3 shadow-2xl sm:-mb-40 lg:mx-32 border-4 border-white/20 overflow-hidden">
+                    <div class="relative mx-5 pb-12 -mb-20 rounded-2xl bg-white p-3 shadow-2xl sm:-mb-40 lg:mx-32 border-4 border-yellow-400/30 overflow-hidden">
                         <picture>
                             <source srcset="{{ asset('assets/img/sportbar_menu_1.jpg') }}" media="(max-width: 639px)">
                             <source srcset="{{ asset('assets/img/sportbar_menu.jpg') }}" media="(max-width: 1023px)">
@@ -83,19 +83,19 @@
                     
                     <!-- Download Button Section -->
                     <div class="text-center mb-16">
-                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-600 rounded-full mb-6 shadow-lg">
-                            <i class="fas fa-download text-white text-2xl"></i>
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full mb-6 shadow-lg">
+                            <i class="fas fa-download text-gray-900 text-2xl"></i>
                         </div>
                         
                         <h3 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-4">
-                            Descarga Nuestro Menú
+                            Descarga Nuestro <span class="text-yellow-500">Menú</span>
                         </h3>
                         <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
                             Lleva nuestro menú completo contigo y <span class="font-bold text-gray-900">planea tu próxima visita.</span>
                         </p>
                         
                         <a href="{{ asset('assets/docs/menu.pdf') }}" download class="group inline-block">
-                            <button type="button" class="inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-800 px-10 py-5 leading-6 font-bold text-white hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                            <button type="button" class="gold-button">
                                 <i class="fas fa-file-pdf text-2xl group-hover:animate-bounce"></i>
                                 <span class="text-lg">Descargar Menú PDF</span>
                                 <i class="fas fa-download group-hover:translate-y-1 transition-transform"></i>
@@ -104,9 +104,9 @@
                     </div>
 
                     <!-- Description Card -->
-                    <div class="bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl p-10 shadow-2xl text-white text-center">
-                        <div class="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6 shadow-lg">
-                            <i class="fas fa-star text-white text-3xl"></i>
+                    <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-10 shadow-2xl text-white text-center border border-yellow-400/20">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-yellow-400/20 backdrop-blur-sm rounded-full mb-6 shadow-lg">
+                            <i class="fas fa-star text-yellow-300 text-3xl"></i>
                         </div>
                         <h3 class="text-2xl md:text-3xl font-black mb-4 tracking-tight">
                             Una Experiencia Única

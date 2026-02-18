@@ -1,4 +1,4 @@
-<header id="page-header" class="flex flex-none items-center py-10 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+<header id="page-header" class="flex flex-none items-center py-10 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 ">
     <div class="container mx-auto flex flex-col gap-6 px-4 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-0 lg:px-8 xl:max-w-6xl">
         <div>
             <a href="{{ route('home') }}" class="inline-flex items-center gap-2 text-lg font-bold tracking-wide text-white hover:opacity-75">
@@ -17,7 +17,7 @@
             @endphp
             @foreach ($navItems as $item)
                 <a href="{{ route($item['route']) }}"
-                    class="font-semibold {{ Route::is($item['route']) ? 'text-white' : 'text-gray-400 hover:text-white' }}">
+                    class="font-semibold border-b-2 pb-1 transition-colors {{ Route::is($item['route']) ? 'text-yellow-300 border-yellow-400' : 'text-gray-300 border-transparent hover:text-yellow-300 hover:border-yellow-400/70' }}">
                     {{ $item['label'] }}
                 </a>
             @endforeach

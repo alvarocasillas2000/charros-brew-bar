@@ -48,24 +48,24 @@
         <!-- Page Content -->
         <main id="page-content" class="flex max-w-full flex-auto flex-col">
             <!-- Hero Section with Gradient -->
-            <div class="bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900">
+            <div class="bg-gradient-to-tr from-gray-950 via-gray-900 to-gray-950">
                 <div class="container mx-auto px-4 pt-16 lg:px-8 lg:pt-32 xl:max-w-6xl text-center">
                     <!-- Header Icon -->
-                    <div class="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full mb-6 shadow-2xl animate-bounce">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-yellow-400/20 backdrop-blur-sm rounded-full mb-6 shadow-2xl animate-bounce">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                         </svg>
                     </div>
                     
                     <h2 class="mb-6 text-4xl font-black text-white md:text-6xl tracking-tight drop-shadow-lg animate-slide-up">
-                        Contáctanos
+                        Contáctanos <span class="text-yellow-300">hoy</span>
                     </h2>
                     <h3 class="mx-auto text-xl font-medium text-gray-100 md:text-2xl md:leading-relaxed lg:w-2/3 animate-slide-up-delay">
                         ¿Tienes alguna duda o comentario? <span class="font-bold text-white">Estamos aquí para ayudarte.</span>
                     </h3>
 
                     <div class="flex flex-wrap justify-center gap-4 pt-10 pb-16">
-                        <a href="#contacto-form" class="inline-flex items-center justify-center gap-3 rounded-full border-2 border-gray-600 bg-white px-8 py-4 font-bold text-gray-600 hover:bg-gray-50 hover:scale-105 transition-all duration-300 shadow-lg">
+                        <a href="#contacto-form" class="gold-button">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
                             </svg>
@@ -81,7 +81,7 @@
                         </a>
                     </div>
 
-                    <div class="relative mx-5 pb-12 -mb-20 rounded-2xl bg-white p-3 shadow-2xl sm:-mb-40 lg:mx-32 border-4 border-white/20 overflow-hidden">
+                    <div class="relative mx-5 pb-12 -mb-20 rounded-2xl bg-white p-3 shadow-2xl sm:-mb-40 lg:mx-32 border-4 border-yellow-400/30 overflow-hidden">
                         <img src="{{ asset('assets/img/4E2A1479.jpeg') }}" alt="Interior de Charros Brew Bar con vista al estadio - Contacto y ubicación en Guadalajara" class="mx-auto w-full rounded-xl object-cover" />
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                             <!-- Left Column - Contact Form -->
                             <div>
                                 <div class="mb-8" id="contacto-form">
-                                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-700 rounded-full mb-4 shadow-lg">
+                                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full mb-4 shadow-lg">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                                         </svg>
@@ -105,7 +105,7 @@
                                         Envíanos un mensaje
                                     </h2>
                                     <p class="text-lg text-gray-600">
-                                        Complete el formulario y <span class="font-bold text-gray-900">nuestro equipo te responderá pronto.</span>
+                                        Complete el formulario y <span class="font-bold text-yellow-600">nuestro equipo te responderá pronto.</span>
                                     </p>
                                 </div>
 
@@ -150,8 +150,8 @@
                                     <!-- Teléfono -->
                                     <div class="mb-5">
                                         <label for="tel" class="flex items-center text-sm font-bold text-gray-700 mb-2">
-                                            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-green-600">
+                                            <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-yellow-700">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                                 </svg>
                                             </div>
@@ -161,7 +161,7 @@
                                                id="tel" 
                                                name="tel" 
                                                placeholder="33 1234 5678" 
-                                               class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:ring-2 focus:ring-green-500/50 focus:border-green-500 transition-all duration-200" 
+                                               class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:ring-2 focus:ring-yellow-400/40 focus:border-yellow-500 transition-all duration-200" 
                                                required />
                                     </div>
 
@@ -183,7 +183,7 @@
                                                   required></textarea>
                                     </div>
 
-                                    <button type="submit" class="w-full group inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 px-8 py-4 font-bold text-white hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
+                                    <button type="submit" class="gold-button w-full rounded-xl">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-transform">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                                         </svg>
@@ -195,7 +195,7 @@
                             <!-- Right Column - Contact Information Cards -->
                             <div>
                                 <div class="mb-8 lg:pb-8">
-                                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-700 rounded-full mb-4 shadow-lg">
+                                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full mb-4 shadow-lg">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
                                         </svg>
@@ -213,7 +213,7 @@
                                     <!-- Dirección Card -->
                                     <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group cursor-pointer">
                                         <div class="flex items-start space-x-4">
-                                            <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-gray-500 to-gray-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                                            <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -232,14 +232,14 @@
                                     <!-- Teléfono Card -->
                                     <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group cursor-pointer">
                                         <div class="flex items-start space-x-4">
-                                            <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                                            <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                                 </svg>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="text-lg font-bold text-gray-900 mb-2">Teléfono</h4>
-                                                <a href="tel:+523312500826" class="text-gray-600 hover:text-green-600 transition-colors font-semibold text-lg">
+                                                <a href="tel:+523312500826" class="text-gray-600 hover:text-yellow-600 transition-colors font-semibold text-lg">
                                                     (33) 1250-0826
                                                 </a>
                                             </div>
@@ -249,7 +249,7 @@
                                     <!-- Correo Card -->
                                     <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group cursor-pointer">
                                         <div class="flex items-start space-x-4">
-                                            <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-gray-500 to-gray-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                                            <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                                 </svg>

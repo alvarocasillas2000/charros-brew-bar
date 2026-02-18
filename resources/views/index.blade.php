@@ -82,7 +82,7 @@
       <!-- Page Content -->
       <main id="page-content" class="flex max-w-full flex-auto flex-col">
         <!-- Hero -->
-        <div class="bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900">
+        <div class="bg-gradient-to-tr from-gray-950 via-gray-900 to-gray-950">
           <!-- Hero Content -->
           <div
             class="container mx-auto px-4 pt-12 lg:px-8 lg:pt-20 xl:max-w-6xl">
@@ -98,7 +98,7 @@
               <h2
                 class="mb-6 text-4xl font-black text-balance text-white md:text-6xl tracking-tight leading-tight drop-shadow-lg animate-slide-up">
                 Charros Brew Bar <br>
-                <span class="text-gray-300">Una nueva experiencia</span> en el béisbol
+                <span class="text-yellow-300">Una nueva experiencia</span> en el béisbol
               </h2>
               <h3
                 class="mx-auto text-xl font-medium text-gray-100 md:text-2xl md:leading-relaxed lg:w-3/4 animate-slide-up-delay">
@@ -110,7 +110,7 @@
               <a href="{{ route('reservation.show') }}" class="group">
                 <button
                   type="button"
-                  class="inline-flex items-center justify-center gap-3 rounded-full border-2 text-xl border-gray-700 bg-gray-900 px-12 py-6 leading-6 font-bold text-white hover:border-gray-500 hover:bg-gray-500 hover:scale-105 focus:ring-4 focus:ring-gray-400/50 focus:outline-hidden active:border-gray-700 active:bg-gray-700 transition-all duration-300 shadow-2xl">
+                  class="gold-button text-xl shadow-yellow-400/30">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check group-hover:scale-110 transition-transform">
                     <path d="M8 2v4" />
                     <path d="M16 2v4" />
@@ -127,7 +127,7 @@
             </div>
 
             <!-- Carousel Container -->
-            <div class="relative mx-5 -mb-24 rounded-2xl bg-white p-3 shadow-2xl sm:-mb-48 lg:mx-32 overflow-hidden border-4 border-white/20">
+            <div class="relative mx-5 -mb-24 rounded-2xl bg-white p-3 shadow-2xl sm:-mb-48 lg:mx-32 overflow-hidden border-4 border-yellow-400/30">
               <div
                 id="carousel-slide"
                 class="flex transition-transform duration-500 ease-in-out w-full"
@@ -184,10 +184,10 @@
             <!-- Heading -->
             <div class="text-center space-y-4">
               <h2 class="mb-6 text-4xl font-black text-gray-900 md:text-5xl">
-                ¡Una experiencia <span class="text-gray-600">completa</span>!
+                ¡Una experiencia <span class="text-yellow-500">completa</span>!
               </h2>
               <h3
-                class="mx-auto text-xl font-medium text-gray-600 md:text-2xl md:leading-relaxed lg:w-3/4">
+                class="mx-auto text-xl font-medium text-gray-700 md:text-2xl md:leading-relaxed lg:w-3/4">
                 Nos esforzamos por ofrecer una experiencia completa para que puedas disfrutar del juego de Charros de Jalisco como nunca antes.
               </h3>
             </div>
@@ -199,9 +199,9 @@
                 <div
                   class="relative mb-8 mx-auto inline-flex h-20 w-20 items-center justify-center">
                   <div
-                    class="absolute inset-0 -m-4 rounded-2xl bg-gradient-to-br from-gray-400 to-gray-600 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
+                    class="absolute inset-0 -m-4 rounded-2xl bg-gradient-to-br from-yellow-300 to-yellow-500 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
                   <div
-                    class="absolute inset-0 -m-3 rounded-2xl bg-gradient-to-br from-gray-500 to-gray-700 group-hover:scale-110 transition-transform"></div>
+                    class="absolute inset-0 -m-3 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 group-hover:scale-110 transition-transform"></div>
                   <span
                     class="relative text-2xl font-semibold text-white group-hover:scale-125 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hamburger">
@@ -221,9 +221,9 @@
                 <div
                   class="relative mb-8 mx-auto inline-flex h-20 w-20 items-center justify-center">
                   <div
-                    class="absolute inset-0 -m-4 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
+                    class="absolute inset-0 -m-4 rounded-2xl bg-gradient-to-br from-yellow-300 to-yellow-500 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
                   <div
-                    class="absolute inset-0 -m-3 rounded-2xl bg-gradient-to-br from-green-500 to-green-700 group-hover:scale-110 transition-transform"></div>
+                    class="absolute inset-0 -m-3 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 group-hover:scale-110 transition-transform"></div>
                   <span
                     class="relative text-2xl font-semibold text-white group-hover:scale-125 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 256 256">
@@ -240,9 +240,9 @@
                 <div
                   class="relative mb-8 mx-auto inline-flex h-20 w-20 items-center justify-center">
                   <div
-                    class="absolute inset-0 -m-4 rounded-2xl bg-gradient-to-br from-gray-400 to-gray-600 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
+                    class="absolute inset-0 -m-4 rounded-2xl bg-gradient-to-br from-yellow-300 to-yellow-500 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
                   <div
-                    class="absolute inset-0 -m-3 rounded-2xl bg-gradient-to-br from-gray-500 to-gray-700 group-hover:scale-110 transition-transform"></div>
+                    class="absolute inset-0 -m-3 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 group-hover:scale-110 transition-transform"></div>
                   <span
                     class="relative text-3xl font-bold text-white group-hover:scale-125 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-party-popper">
@@ -269,6 +269,70 @@
         </div>
         <!-- END Features Section -->
 
+        <!-- Experience Highlights -->
+        <div class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
+          <div class="container mx-auto space-y-12 px-4 py-16 lg:px-8 lg:py-24 xl:max-w-6xl">
+            <div class="text-center space-y-4">
+              <span class="gold-badge">Novedades 2026</span>
+              <h2 class="text-4xl font-black text-white md:text-5xl">
+                Más que un juego: <span class="text-yellow-400">experiencias</span>
+              </h2>
+              <p class="mx-auto text-lg font-medium text-gray-200 md:text-xl lg:w-3/4">
+                Sumamos detalles que elevan cada visita: más comodidad, más sabor y más momentos para compartir.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+              <div class="gold-card p-8 text-center">
+                <div class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-gray-900 shadow-lg shadow-yellow-400/30">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 2" />
+                  </svg>
+                </div>
+                <h4 class="mb-3 text-xl font-bold text-white">Reservas inteligentes</h4>
+                <p class="text-sm leading-relaxed text-gray-200">Confirmaciones en minutos y recordatorios antes del juego.</p>
+              </div>
+
+              <div class="gold-card p-8 text-center">
+                <div class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-gray-900 shadow-lg shadow-yellow-400/30">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+                    <path d="M12 2l2.6 5.3 5.9.8-4.3 4.1 1 5.8L12 15.7 6.8 18.9l1-5.8-4.3-4.1 5.9-.8L12 2z" />
+                  </svg>
+                </div>
+                <h4 class="mb-3 text-xl font-bold text-white">Combos dorados</h4>
+                <p class="text-sm leading-relaxed text-gray-200">Promos especiales en botanas y bebidas durante la serie.</p>
+              </div>
+
+              <div class="gold-card p-8 text-center">
+                <div class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-gray-900 shadow-lg shadow-yellow-400/30">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7">
+                    <path d="M4 6h16v12H4z" />
+                    <path d="M8 6V4h8v2" />
+                    <path d="M9 12h6" />
+                    <path d="M9 15h6" />
+                  </svg>
+                </div>
+                <h4 class="mb-3 text-xl font-bold text-white">Eventos tematicos</h4>
+                <p class="text-sm leading-relaxed text-gray-200">Noches retro, invitados y activaciones sorpresa.</p>
+              </div>
+
+              <div class="gold-card p-8 text-center">
+                <div class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-gray-900 shadow-lg shadow-yellow-400/30">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7">
+                    <path d="M16 11a4 4 0 1 0-8 0" />
+                    <path d="M6 20a6 6 0 0 1 12 0" />
+                    <path d="M17.5 8.5a3.5 3.5 0 1 0-3.5-3.5" />
+                  </svg>
+                </div>
+                <h4 class="mb-3 text-xl font-bold text-white">Zona familiar</h4>
+                <p class="text-sm leading-relaxed text-gray-200">Espacios comodos para venir con amigos y familia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Experience Highlights -->
+
         <!-- How it works -->
         <div class="relative bg-gray-50 overflow-hidden">
           <div class="absolute mt-14 mb-14 inset-0 skew-y-2 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
@@ -277,7 +341,7 @@
             <!-- Heading -->
             <div class="text-center space-y-4">
               <h2 class="text-4xl font-black text-white md:text-5xl drop-shadow-lg">
-                ¿Cómo <span class="text-gray-300">reservar</span>?
+                ¿Cómo <span class="text-yellow-300">reservar</span>?
               </h2>
               <p class="text-xl text-gray-100 max-w-2xl mx-auto">Sigue estos simples pasos y asegura tu lugar</p>
             </div>
@@ -289,7 +353,7 @@
               <div
                 class="group rounded-3xl bg-white/10 backdrop-blur-sm p-8 shadow-2xl transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:-translate-y-2 border border-white/10">
                 <svg height="56" viewBox="0 0 33.033 33.549" width="56" xmlns="http://www.w3.org/2000/svg"
-                  class="hi-outline hi-cube mb-6 inline-block h-14 w-14 text-gray-300 group-hover:text-gray-200 transition-colors group-hover:scale-110 duration-300"
+                  class="hi-outline hi-cube mb-6 inline-block h-14 w-14 text-yellow-300 group-hover:text-yellow-200 transition-colors group-hover:scale-110 duration-300"
                   fill="currentColor">
                   <g transform="translate(-607.873 -577.167)">
                     <path d="M638.546,610.716a1,1,0,0,1-.942-1.334c1.785-5.044,1.745-8.637-.12-10.679-3.26-3.568-11.186-1.6-11.266-1.574l-1.247.318V586l.016-.087a3.188,3.188,0,0,0-.274-2.085.7.7,0,0,0-.609-.226.774.774,0,0,0-.657.247,3.155,3.155,0,0,0-.346,2.033l.011.144v15.115l-1.155-.18c-1.766-.279-2.336.02-2.408.158-.459.9,2.05,4.66,5.264,7.888a1,1,0,0,1-1.418,1.412c-1.681-1.689-7.053-7.412-5.627-10.208.645-1.265,2.182-1.425,3.344-1.359V586.094a4.926,4.926,0,0,1,.822-3.55,2.768,2.768,0,0,1,2.17-.939,2.678,2.678,0,0,1,2.144.944,4.94,4.94,0,0,1,.723,3.624v8.757c2.643-.466,8.781-1.085,11.987,2.42,2.406,2.629,2.585,6.9.532,12.7A1,1,0,0,1,638.546,610.716Z" />
@@ -299,7 +363,7 @@
                   </g>
                 </svg>
                 <div class="space-y-3">
-                  <span class="inline-block px-3 py-1 bg-gray-500/30 rounded-full text-sm font-bold text-white">Paso 1</span>
+                  <span class="inline-block px-3 py-1 bg-yellow-400/20 rounded-full text-sm font-bold text-yellow-100">Paso 1</span>
                   <h4 class="text-xl font-bold text-white">
                     Ingresa a nuestra web y elige tu mesa
                   </h4>
@@ -317,7 +381,7 @@
                   width="56"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="hi-outline hi-cube mb-6 inline-block h-14 w-14 text-gray-300 group-hover:text-gray-200 transition-colors group-hover:scale-110 duration-300">
+                  class="hi-outline hi-cube mb-6 inline-block h-14 w-14 text-yellow-300 group-hover:text-yellow-200 transition-colors group-hover:scale-110 duration-300">
                   <polyline
                     clip-rule="evenodd"
                     fill="none"
@@ -335,7 +399,7 @@
                     fill="currentColor" />
                 </svg>
                 <div class="space-y-3">
-                  <span class="inline-block px-3 py-1 bg-gray-500/30 rounded-full text-sm font-bold text-white">Paso 2</span>
+                  <span class="inline-block px-3 py-1 bg-yellow-400/20 rounded-full text-sm font-bold text-yellow-100">Paso 2</span>
                   <h4 class="text-xl font-bold text-white">
                     Confirma tu reserva y realiza el pago
                   </h4>
@@ -347,14 +411,14 @@
               <div
                 class="group rounded-3xl bg-white/10 backdrop-blur-sm p-8 shadow-2xl transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:-translate-y-2 sm:col-span-2 lg:col-span-1 border border-white/10">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="56" height="56"
-                  class="hi-outline hi-cube mb-6 inline-block h-14 w-14 text-gray-300 group-hover:text-gray-200 transition-colors group-hover:scale-110 duration-300"
+                  class="hi-outline hi-cube mb-6 inline-block h-14 w-14 text-yellow-300 group-hover:text-yellow-200 transition-colors group-hover:scale-110 duration-300"
                   fill="currentColor">
                   <path d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M11.9,2c-0.1,0.9-0.3,1.8-0.6,2.6l-0.2-0.2 c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7L11,5.6c-0.4,0.9-1,1.8-1.7,2.6L8.4,7.3c-0.2-0.2-0.5-0.2-0.7,0 C7.5,7.5,7.5,7.8,7.7,8l0.9,0.9C7.9,9.6,7,10.2,6.1,10.7l-0.6-0.6c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l0.3,0.3 c-1,0.4-2.1,0.7-3.2,0.8C2,6.5,6.5,2,11.9,2z M11.1,22c-4.8-0.4-8.6-4.2-9-9c1.4-0.1,2.7-0.5,3.9-1l1,1c0.2,0.2,0.5,0.2,0.7,0 c0.2-0.2,0.2-0.5,0-0.7l-0.8-0.8c0.9-0.5,1.7-1.1,2.4-1.8l0.5,0.5c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7L10,8.9 c0.7-0.8,1.3-1.6,1.7-2.6l0.9,0.9c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7l-1.2-1.2c0.4-1,0.7-2.2,0.8-3.3c4.8,0.4,8.6,4.2,9,9 c-1.2,0.1-2.3,0.4-3.3,0.8l-1.4-1.4c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l1.1,1.1c-0.9,0.5-1.8,1-2.6,1.7l-0.7-0.7 c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l0.7,0.7c-0.7,0.7-1.3,1.6-1.8,2.4l-1-1c-0.2-0.2-0.5-0.2-0.7,0s-0.2,0.5,0,0.7 l1.2,1.2C11.5,19.3,11.2,20.6,11.1,22z M12.1,22c0.1-1.1,0.4-2.2,0.8-3.2L13,19c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7 l-0.4-0.4c0.5-0.9,1.1-1.7,1.8-2.5l0.8,0.8c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7l-0.7-0.7c0.8-0.7,1.6-1.2,2.6-1.7l0.3,0.3 c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7c0.8-0.3,1.7-0.5,2.6-0.6C22,17.5,17.5,22,12.1,22z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                   <polyline clip-rule="evenodd" fill="none" fill-rule="evenodd" points="21.2,5.6 11.2,15.2 6.8,10.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                 </svg>
 
                 <div class="space-y-3">
-                  <span class="inline-block px-3 py-1 bg-gray-500/30 rounded-full text-sm font-bold text-white">Paso 3</span>
+                  <span class="inline-block px-3 py-1 bg-yellow-400/20 rounded-full text-sm font-bold text-yellow-100">Paso 3</span>
                   <h4 class="text-xl font-bold text-white">
                     Te esperamos en el estadio
                   </h4>
@@ -369,7 +433,7 @@
               <a href="{{ route('reservation.show') }}" class="inline-block group">
                 <button
                   type="button"
-                  class="inline-flex items-center justify-center gap-3 rounded-full border-2 border-white bg-white px-10 py-5 leading-6 font-bold text-gray-900 hover:bg-gray-50 hover:scale-105 focus:ring-4 focus:ring-white/50 focus:outline-hidden transition-all duration-300 shadow-2xl text-lg">
+                  class="gold-button text-lg shadow-yellow-400/30">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" data-slot="icon" class="inline-block size-6 opacity-70 group-hover:opacity-100 transition-opacity">
                     <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
                   </svg>
@@ -388,7 +452,7 @@
             <!-- Heading -->
             <div class="text-center space-y-4">
               <h2 class="mb-4 text-4xl font-black text-gray-900 md:text-5xl">
-                Elige tu mesa
+                Elige tu mesa <span class="text-yellow-500">ideal</span>
               </h2>
               <h3
                 class="mx-auto text-xl font-medium text-gray-700 md:leading-relaxed lg:w-3/4">
@@ -403,12 +467,12 @@
               <div
                 class="group flex flex-col rounded-3xl border-2 border-gray-200 bg-white shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                 <div class="grow p-8 lg:p-10 space-y-6">
-                  <div class="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full">
+                  <div class="inline-flex items-center gap-2 bg-yellow-100 px-4 py-2 rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-gray-700">
                       <path fill-rule="evenodd" d="M4.5 2A1.5 1.5 0 003 3.5v13A1.5 1.5 0 004.5 18h11a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0015.5 2h-11zm4.5 9a3 3 0 100-6 3 3 0 000 6zm7 7h-11v-1.5a1.5 1.5 0 011.5-1.5h8a1.5 1.5 0 011.5 1.5V18z" clip-rule="evenodd" />
                     </svg>
                     <span
-                      class="text-sm font-bold tracking-wider text-gray-700 uppercase">
+                      class="text-sm font-bold tracking-wider text-yellow-800 uppercase">
                       Zona General
                     </span>
                   </div>
